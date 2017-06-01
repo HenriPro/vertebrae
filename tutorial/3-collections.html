@@ -125,7 +125,9 @@ var commentList = [
   new Comment('Doug?', 1),
   new Comment('Doug.', 2),
   new Comment('"Doug".', 3),
-  new Comment('Doug?!', 4)];
+  new Comment('Doug?!', 4),
+  new Comment('Doug?!', 5)];
+
 
 // Add all of these to a new collection:
 var comments = new Comments(commentList);
@@ -134,7 +136,7 @@ var comments = new Comments(commentList);
 var commentsView = new CommentsView({ collection: comments });
 
 // Append it to the page (uncomment this when you are ready):
-// $('body').append(commentsView.render());
+$('body').append(commentsView.render());
     </script>
   </body>
 </html>
